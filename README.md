@@ -1,4 +1,6 @@
-# Skillfactory Java OpenLesson 1804 
+# Skillfactory Java OpenLesson 1804
+
+![screenshot](screenshot.png)
 
 ## До урока нужно
 - Скачать и установить jdk ([Oracle](https://www.oracle.com/java/technologies/javase-jdk13-downloads.html) или [OpenJdk](https://jdk.java.net/13/))
