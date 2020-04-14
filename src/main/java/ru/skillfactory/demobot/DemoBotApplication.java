@@ -2,7 +2,6 @@ package ru.skillfactory.demobot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.telegram.telegrambots.ApiContextInitializer;
 
 @SpringBootApplication
 public class DemoBotApplication {
