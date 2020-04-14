@@ -1,6 +1,33 @@
-# Демо бот Skillfactory
+# Skillfactory Java OpenLesson 1804 
 
-Проект для открытого урока по Java
+## До урока нужно
+- Скачать и установить jdk ([Oracle](https://www.oracle.com/java/technologies/javase-jdk13-downloads.html) или [OpenJdk](https://jdk.java.net/13/))
+- Скачать и установить [IDEA](https://www.jetbrains.com/ru-ru/idea/download)
+
+Установить переменные окружения `JAVA_HOME` и добавить ее в `PATH`
+```
+# Для Windows
+set JAVA_HOME = C:\Program Files\Java\jdk13
+# Для Linux
+export JAVA_HOME=/usr/java/jdk13 /bin/java
+# Для MacOS
+export JAVA_HOME=$(/usr/libexec/java_home)
+```
+
+Результат, при выполнении команды в консоле вы должны будете увидеть подобный результат
+```
+sboychenko@macbook ~ % java --version 
+java 11.0.6 2020-01-14 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.6+8-LTS)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.6+8-LTS, mixed mode)
+```
+
+Далее скачайте [репозиторий](todo) это можно сделать нажав на кнопку `Clone or download`
+
+Так же не забудьте зарядить свои ноутбуки, и обязательно захватите хорошее настроение
+
+
+## Telegram bot на Java
 
 Тут много чего можно исправить, в процессе прохождения курса вы можете возвращаться и смотреть на код более осознано
 
