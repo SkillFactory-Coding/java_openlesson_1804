@@ -24,7 +24,7 @@ Java(TM) SE Runtime Environment 18.9 (build 11.0.6+8-LTS)
 Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.6+8-LTS, mixed mode)
 ```
 
-Далее скачайте [репозиторий](todo) это можно сделать нажав на кнопку `Clone or download`
+Далее скачайте этот репозиторий (можно сделать нажав на кнопку `Clone or download`)
 
 Так же не забудьте зарядить свои ноутбуки, и обязательно захватите хорошее настроение
 
