@@ -28,21 +28,46 @@ Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.6+8-LTS, mixed mode)
 
 Так же не забудьте зарядить свои ноутбуки, и обязательно захватите хорошее настроение
 
+## Hello World
+Начнем с азов. Создадим файл `HelloWorld.java`
+```
+class HelloWorld {
+    public static void main(String[] args) {
+        if (args.length == 1) {
+            System.out.println("Hello " + args[0] + "!");
+        } else {
+            System.out.println("Hello World!")
+        }
+    }
+}
+```
+Теперь скомпилируем и запустим его
+```
+javac HelloWorld.java
+java HelloWorld
+```
+Работает? 
+```
+%  java HelloWorld 
+Hello World! 
+ %  java HelloWorld Sergey
+Hello Sergey! 
+```
+Погнали дальше! :rocket:
 
 ## Telegram bot на Java
+Начнем с идеи. Круто будет написать бота, который будет по запросу отдавать актуальный курс любой валюты?
+![diagram](diagram.png)
 
-Тут много чего можно исправить, в процессе прохождения курса вы можете возвращаться и смотреть на код более осознано
-
-Исправить неидеальный код, добавить работу с БД, реализовать новые возможности.
-
-И много всего!
-
+Для этого нам понадобятся:
 - Spring boot [Spring initializr](https://start.spring.io/)
 - Для работы c telegram библиотека [Telegram Bot Java Library](https://github.com/rubenlagus/TelegramBots)
 - Сервис для получения списка валют [CBR](https://www.cbr-xml-daily.ru/#json)
+- И конечно же создать бота поможет [БатяБот (BotFather)](http://t.me/BotFather)
+
+
 
 ### Сборка проекта
-Создать бота: http://t.me/BotFather
 
 Прописать в `application.properties` необходимые настройки
 ```
@@ -62,6 +87,14 @@ http://localhost:8282
 http://localhost:8282/actuator
 ```
 после запуска можно пользоваться ботом!
+
+
+P.S.
+>Тут много чего можно исправить, в процессе прохождения курса вы можете возвращаться и смотреть на код более осознано
+>
+>Исправить неидеальный код, добавить работу с БД, реализовать новые возможности.
+>
+>И много всего!
 
 ## Идеи для развития
 - [x] Посетить открытый урок Skillfactory

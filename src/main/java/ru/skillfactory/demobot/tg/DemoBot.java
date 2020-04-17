@@ -32,12 +32,17 @@ public class DemoBot extends TelegramLongPollingBot {
         this.cbrClient = cbrClient;
     }
 
+    /**
+     * Основной метод, на любое событие api.telegram.org
+     * Будет скидывать сюда объект Update
+     * @param update событие с данными
+     */
     @Override
     public void onUpdateReceived(Update update) {
         log.info("Get {}", update);
 
         if (update.hasMessage() && update.getMessage().hasText()) {
-            // Set variables
+
             String messageText = update.getMessage().getText();
             long chatId = update.getMessage().getChatId();
 
@@ -46,7 +51,6 @@ public class DemoBot extends TelegramLongPollingBot {
             } else if (messageText.toLowerCase().contains("java")) {
                 sendMessage("Хотите стать java-программистом? Приходите skillfactory.ru/java!", chatId);
             } else {
-                // just echo
                 sendMessage(messageText + "?)", chatId);
             }
         }
@@ -62,7 +66,6 @@ public class DemoBot extends TelegramLongPollingBot {
                         "Это демо бот для урока Skillfactory", chatId);
                 break;
             case RATE:
-                // work with rate command
                 if (command.split(" ").length != 2) {
                     sendMessage("Передайте код валюты", chatId);
                     return;
@@ -88,6 +91,11 @@ public class DemoBot extends TelegramLongPollingBot {
 
     }
 
+    /**
+     * Отправка сообщения в чат
+     * @param text текст сообщения
+     * @param chatId ид чата
+     */
     private void sendMessage(String text, long chatId) {
         SendMessage message = new SendMessage()
                 .setChatId(chatId)

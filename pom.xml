@@ -40,6 +40,7 @@
             </exclusions>
         </dependency>
 
+        <!-- Добавим библиотеку для работы с telegram -->
         <dependency>
             <groupId>org.telegram</groupId>
             <artifactId>telegrambots-spring-boot-starter</artifactId>

@@ -11,6 +11,10 @@ import org.telegram.telegrambots.meta.ApiContext;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 
+/**
+ * Тут конфигурация приложения
+ * Создаем классы, которые помогут нам построить логику работы
+ */
 @Configuration
 public class DemoBotConfiguration {
 
@@ -26,6 +30,13 @@ public class DemoBotConfiguration {
     @Value("${proxy.pass}")
     private String pass;
 
+    /**
+     * DefaultBotOptions - специальный класс
+     * Создав который и наполнив нужными параметрами
+     * Сможем передать его нашему боту
+     * Используется для применения прокси-сервера
+     * для подключения к api.telegram.org
+     */
     @Bean
     DefaultBotOptions botOptions() {
         DefaultBotOptions botOptions = ApiContext.getInstance(DefaultBotOptions.class);
@@ -35,6 +46,9 @@ public class DemoBotConfiguration {
         return botOptions;
     }
 
+    /**
+     * Помогает прокинуть данные для авторизации на прокси-сервере
+     */
     @Bean
     Authenticator auth() {
         Authenticator auth = new Authenticator() {
@@ -47,6 +61,10 @@ public class DemoBotConfiguration {
         return auth;
     }
 
+    /**
+     * Поможет взаимодействовать с CBR api
+     * Осуществить REST вызов и получить данные
+     */
     @Bean
     RestTemplate restTemplate() {
         return new RestTemplateBuilder().build();
