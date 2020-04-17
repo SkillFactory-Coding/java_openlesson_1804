@@ -63,7 +63,7 @@ Hello Sergey!
 - Spring boot [Spring initializr](https://start.spring.io/)
 - Для работы c telegram библиотека [Telegram Bot Java Library](https://github.com/rubenlagus/TelegramBots)
 - Сервис для получения списка валют [CBR](https://www.cbr-xml-daily.ru/#json)
-- И конечно же создать бота поможет [БатяБот (BotFather)](http://t.me/BotFather)
+- И конечно же создать бота поможет @BotFather [БатяБот](http://t.me/BotFather)
 
 
 
