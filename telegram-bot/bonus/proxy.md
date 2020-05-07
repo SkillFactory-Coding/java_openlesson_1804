@@ -1,21 +1,5 @@
-# До 22 апреля
-```
-45.140.174.118:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.117:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.116:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.115:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.114:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.113:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.112:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.111:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.110:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.109:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.106:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.105:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.92:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.103:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.102:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.97:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.95:61431:1pnvG9PFtn:4dxXAEuTTK
-45.140.174.94:61431:1pnvG9PFtn:4dxXAEuTTK
-```
+## proxy
+
+К сожалению, в России бот не будет работать без прокси, поищите бесплатные, либо купите стабильный сервер для работы
+
+Так же подойдут различные vpn сервисы, тогда на уровне приложения ничего дополнительно настраивать не понадобится 
