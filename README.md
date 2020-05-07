@@ -61,8 +61,8 @@ Hello Sergey!
 
 ### Telegram bot на Java
 
-[Перейти ->](telegram-bot/README.md)
+[Перейти ->](telegram-bot)
 
 ### Vaadin TODO
 
-[Перейти ->](vaadin-todo/README.md)
+[Перейти ->](vaadin-todo)
