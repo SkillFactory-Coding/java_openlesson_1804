@@ -1,6 +1,10 @@
 # Skillfactory Java OpenLesson 1804
 
-![screenshot](screenshot.png)
+![logo](logo.png)
+
+Тут есть 2 проекта наших открытых уроков, в первом мы создадим телеграм бота, а во втором - fullstack приложение исключительно на java 
+
+Интересного и результативного обучения! :rocket: 
 
 ## До урока нужно
 - Скачать и установить jdk ([Oracle](https://www.oracle.com/java/technologies/javase-jdk13-downloads.html) или [OpenJdk](https://jdk.java.net/13/))
@@ -16,7 +20,7 @@ export JAVA_HOME=/usr/java/jdk13 /bin/java
 export JAVA_HOME=$(/usr/libexec/java_home)
 ```
 
-Результат, при выполнении команды в консоле вы должны будете увидеть подобный результат
+Результат, при выполнении команды в console вы должны будете увидеть подобный результат
 ```
 sboychenko@macbook ~ % java --version 
 java 11.0.6 2020-01-14 LTS
@@ -55,51 +59,10 @@ Hello Sergey!
 ```
 Погнали дальше! :rocket:
 
-## Telegram bot на Java
-Начнем с идеи. Круто будет написать бота, который будет по запросу отдавать актуальный курс любой валюты?
-![diagram](diagram.png)
+### Telegram bot на Java
 
-Для этого нам понадобятся:
-- Spring boot [Spring initializr](https://start.spring.io/)
-- Для работы c telegram библиотека [Telegram Bot Java Library](https://github.com/rubenlagus/TelegramBots)
-- Сервис для получения списка валют [CBR](https://www.cbr-xml-daily.ru/#json)
-- И конечно же создать бота поможет @BotFather [БатяБот](http://t.me/BotFather)
+[Перейти ->](telegram-bot/README.md)
 
+### Vaadin TODO
 
-
-### Сборка проекта
-
-Прописать в `application.properties` необходимые настройки
-```
-./mvn package
-```
-Собранный **jar** файл будет находиться в `./target`
-
-### Запуск
-После сборки находясь в директории проекта
-```
-java -jar ./target/demo-bot-0.0.1-SNAPSHOT.jar
-```
-
-Проверить статус приложения 
-```
-http://localhost:8282
-http://localhost:8282/actuator
-```
-после запуска можно пользоваться ботом!
-
-
-P.S.
->Тут много чего можно исправить, в процессе прохождения курса вы можете возвращаться и смотреть на код более осознано
->
->Исправить неидеальный код, добавить работу с БД, реализовать новые возможности.
->
->И много всего!
-
-## Идеи для развития
-- [x] Посетить открытый урок Skillfactory
-- [ ] Изучить программирование на http://skillfactory.ru/java 
-- [ ] Добавить возможность получить список валют
-- [ ] Конвертировать валюты
-- [ ] Добавить еще новых команд
-- [ ] Сделать стартап и заработать `$1000000`
+[Перейти ->](vaadin-todo/README.md)
