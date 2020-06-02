@@ -1,4 +1,4 @@
-# Skillfactory Java OpenLesson 1804
+# Skillfactory Java OpenLesson 1804 + 0705
 
 ![logo](logo.png)
 
